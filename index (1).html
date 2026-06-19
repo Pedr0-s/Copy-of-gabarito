@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title> Confirmação de Agendamento</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <text y='.9em' font-size='90'>✅</text>
+</svg>">
+</head>
+<body class="dark">
+  
+  <!-- FORMULÁRIO -->
+   
+  <div class="formulario">
+    <div class="title"><ion-icon name="document-outline"></ion-icon><h3>Preencher dados ✅</h3>
+   
+    </div> 
+    
+
+    <input type="text" id="paciente" placeholder="Paciente👤">
+    
+    <input type="text" id="exame" list="exames" placeholder="Procedimento 🧬
+">
+
+       <datalist id="exames">
+          <option value="Ultrassom Abdome Total"></option>
+          <option value="Angio TC coronariana"></option>
+          <option value="Angio RM coluna"></option>
+          <option value="Ultrassom Abdome Superior">
+          <option value="Ultrassom Abdome Inferior">Ultrassom Abdome Inferior</option>
+          <option value="Ultrassom Pélvico">Ultrassom Pélvico</option>
+          <option value="Ultrassom Transvaginal">Ultrassom Transvaginal</option>
+          <option value="Ultrassom Obstétrico">Ultrassom Obstétrico</option>
+          <option value="Ultrassom Morfológico">Ultrassom Morfológico</option>
+          <option value="Ultrassom Doppler">Ultrassom Doppler</option>
+          <option value="Ultrassom de Tireóide">Ultrassom de Tireóide</option>
+          <option value="Ultrassom de Mamas">Ultrassom de Mamas</option>
+          <option value="Tomografia Computadorizada Crânio">Tomografia Computadorizada Crânio</option>
+          <option value="Tomografia Computadorizada Tórax">Tomografia Computadorizada Tórax</option>
+            <option value="Tomografia Computadorizada Abdome">Tomografia Computadorizada Abdome</option>
+          <option value="Tomografia Computadorizada Pelve">Tomografia Computadorizada Pelve</option>
+          <option value="Tomografia Computadorizada Coluna">Tomografia Computadorizada Coluna</option>
+          <option value="Ressonância Magnética Crânio">Ressonância Magnética Crânio</option>
+          <option value="Ressonância Magnética Coluna">Ressonância Magnética Coluna</option>
+          <option value="Ressonância Magnética Abdome">Ressonância Magnética Abdome</option>
+          <option value="Ressonância Magnética Pelve">Ressonância Magnética Pelve</option>
+          <option value="Ressonância Magnética Articulação">Ressonância Magnética Articulação</option>
+          <option value="Raio-X Tórax">Raio-X Tórax</option>
+            <option value="Raio-X Coluna">Raio-X Coluna</option>
+            <option value="Raio-X Membros">Raio-X Membros</option>
+          <option value="Raio-X Abdome">Raio-X Abdome</option>
+          <option value="Eletrocardiograma">Eletrocardiograma</option>
+          <option value="Ecocardiograma">Ecocardiograma</option>
+          <option value="Teste Ergométrico">Teste Ergométrico</option>
+          <option value="Holter 24h">Holter 24h</option>
+          <option value="MAPA 24h">MAPA 24h</option>
+          <option value="Endoscopia Digestiva Alta">Endoscopia Digestiva Alta</option>
+          <option value="Colonoscopia">Colonoscopia</option>
+          <option value="Retossigmoidoscopia">Retossigmoidoscopia</option>
+          <option value="Exame de Sangue Completo">Exame de Sangue Completo</option>
+      <option value="COLUNA CERVICAL"></option>
+        <option value="COLUNA DORSAL"></option>
+        <option value="COLUNA LOMBO SACRA"></option>
+        <option value="Complemento C2"></option>
+        <option value="Complemento C3"></option>
+        <option value="Complemento C4"></option>
+        <option value="Complemento CH-50"></option>
+        <option value="Coombs direto"></option>
+        <option value="Coombs indireto"></option>
+        <option value="Core Biopsia Guiada Por Us de Região Cervical"></option>
+        <option value="Cortisol"></option>
+        <option value="COSTELAS POR HEMITORAX"></option>
+        <option value="COTOVELO DIREITO"></option>
+        <option value="COTOVELO ESQUERDO"></option>
+        <option value="COXA"></option>
+        <option value="COXA - FEMUR - DIREITO"></option>
+        <option value="COXA - FEMUR - ESQUERDO"></option>
+        <option value="CRANIO PA LAT"></option>
+        <option value="CRANIO PA LAT BRETTON"></option>
+        <option value="CRANIO PA LATA OBL. OU BRETTON HIRTZ"></option>
+        <option value="CREATININA NA URINA"></option>
+        <option value="CREATININA NO SORO"></option>
+        <option value="CREATINO FOSFOQUINASE - FRACAO MB"></option>
+        <option value="CREATINO FOSFOQUINASE TOTAL (CPK)"></option>
+        <option value="Crescimento, hormônio do (HGH)"></option>
+        <option value="Cromo"></option>
+        <option value="Cultura para bactérias anaeróbicas"></option>
+      <option value="Cultura, fezes"></option>
+      <option value="Dehidroepiandrosterona (DHEA)"></option>
+      <option value="DENGUE ANTICORPOS IGG"></option>
+      <option value="DENSITOMETRIA OSSEA"></option>
+      <option value="DIGOXINA"></option>
+      <option value="DIHIDROTESTOSTERONA - SORO"></option>
+      <option value="DOP - VENOSO Membro INFERIOR direito"></option>
+      <option value="DOP - VENOSO Membro INFERIOR esquerdo"></option>
+      <option value="DOP AORTA E ILIACA"></option>
+      <option value="DOP ESCROTAL"></option>
+      <option value="DOP MAMA"></option>
+      <option value="DOP OBSTETRICO"></option>
+      <option value="DOP PELVICO"></option>
+      <option value="DOP PROSTATA"></option>
+      <option value="DOP TIREOIDE"></option>
+      <option value="DOP TRANSVAGINAL"></option>
+      <option value="DOPPLER - CAROTIDAS E VERTEBRAIS"></option>
+      <option value="ECODOPPLER CARDIOGRAMA TRANSTORACICO"></option>
+      <option value="ELETROCARDIOGRAMA"></option>
+      <option value="ELETROENCEFALOGRAMA"></option>
+      <option value="Eletroforese de lipoproteínas"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO INFERIOR DIREITO"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO INFERIOR ESQUERDO"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO SUPERIOR DIREITO"></option>
+      <option value="ELETRONEUROMIOGRAFIA MEMBRO SUPERIOR ESQUERDO"></option>
+      <option value="ENDOSCOPIA DIGESTIVA ALTA"></option>
+      <option value="ESPIROMETRIA SEM BRONCODILATADOR"></option>
+      <option value="ESTRADIOL"></option>
+      <option value="Fator antinúcleo (FAN)"></option>
+      <option value="Fator Reumatóide"></option>
+      <option value="FEMUR DIREITO"></option>
+      <option value="FEMUR ESQUERDO"></option>
+      <option value="FERRITINA SERICA NO SORO"></option>
+      <option value="FERRO SERICO NO SORO"></option>
+      <option value="FOSFATASE ALCALINA NO SORO"></option>
+      <option value="FOSFORO NO SORO"></option>
+      <option value="GAMA GT"></option>
+      <option value="GLICOSE"></option>
+      <option value="GLOBULINA LIGADORA DE HORMONIOS SEXUAIS - SHBG"></option>
+      <option value="Grupo sanguíneo ABO"></option>
+      <option value="HEMOGRAMA COMPLETO"></option>
+      <option value="HEMOGLOBINA GLICADA"></option>
+      <option value="HEPATITE B"></option>
+      <option value="HEPATITE C"></option>
+      <option value="HIV"></option>
+      <option value="HOLTER 24 HORAS"></option>
+      <option value="INSULINA"></option>
+      <option value="JOELHO DIREITO"></option>
+      <option value="JOELHO ESQUERDO"></option>
+      <option value="Lipase"></option>
+      <option value="MAGNESIO NO SORO"></option>
+      <option value="MAMOGRAFIA"></option>
+      <option value="MAPA 24 HORAS"></option>
+      <option value="PROTEINA C REATIVA"></option>
+      <option value="PSA TOTAL"></option>
+      <option value="PSA LIVRE"></option>
+      <option value="T3 TOTAL"></option>
+      <option value="T4 LIVRE"></option>
+      <option value="TSH ULTRA SENSIVEL"></option>
+      <option value="TRIGLICERIDES"></option>
+      <option value="UREIA"></option>
+      <option value="URINA ROTINA"></option>
+      <option value="UROCULTURA"></option>
+      <option value="VDRL"></option>
+      <option value="VITAMINA B12"></option>
+          <option value="ALDOLASE"></option>
+        <option value="ALFA-FETOPROTEINA"></option>
+        <option value="ANTI-HBS"></option>
+        <option value="ANTI-HCV"></option>
+        <option value="ANTI-HIV 1 E 2"></option>
+        <option value="ANTI-TPO"></option>
+        <option value="ANTICORPOS ANTI-NUCLEARES (FAN)"></option>
+        <option value="ANTICOAGULANTE LUPICO"></option>
+
+        <option value="CA 125"></option>
+        <option value="CA 19-9"></option>
+        <option value="CEA"></option>
+
+        <option value="COOMBS DIRETO"></option>
+        <option value="COOMBS INDIRETO"></option>
+
+        <option value="D-DIMERO"></option>
+        <option value="ELETROFORESE DE PROTEINAS"></option>
+        <option value="ELETROFORESE DE HEMOGLOBINA"></option>
+
+        <option value="FATOR REUMATOIDE"></option>
+        <option value="FAN (FATOR ANTINUCLEAR)"></option>
+
+        <option value="GASOMETRIA ARTERIAL"></option>
+        <option value="GASOMETRIA VENOSA"></option>
+
+        <option value="HAPTOGLOBINA"></option>
+        <option value="HOMOCISTEINA"></option>
+
+        <option value="IGE TOTAL"></option>
+        <option value="IGE ESPECIFICO"></option>
+
+        <option value="LACTATO DESIDROGENASE (LDH)"></option>
+        <option value="LIPIDOGRAMA COMPLETO"></option>
+
+        <option value="PROTEINA C"></option>
+        <option value="PROTEINA S"></option>
+
+        <option value="TROPONINA"></option>
+
+        <option value="VHS (VELOCIDADE DE HEMOSSEDIMENTAÇÃO)"></option>
+
+        <option value="ZINCO"></option>
+          <option value="Glicemia">Glicemia</option>
+          <option value="Colesterol Total">Colesterol Total</option>
+          <option value="Triglicerídeos">Triglicerídeos</option>
+          <option value="TSH">TSH</option>
+          <option value="T4 Livre">T4 Livre</option>
+          <option value="Urina Tipo 1">Urina Tipo 1</option>
+          <option value="Urocultura">Urocultura</option>
+            <option value="Fezes Parasitológico">Fezes Parasitológico</option>
+            <option value="Pesquisa de Sangue Oculto">Pesquisa de Sangue Oculto</option>
+            <option value="Consulta Clínica Geral">Consulta Clínica Geral</option>
+      <option value="Consulta Cardiologia">Consulta Cardiologia</option>
+      <option value="Consulta Dermatologia">Consulta Dermatologia</option>
+      <option value="Consulta Ginecologia">Consulta Ginecologia</option>
+      <option value="Consulta Ortopedia">Consulta Ortopedia</option>
+      <option value="Consulta Pediatria">Consulta Pediatria</option>
+      <option value="Consulta Neurologia">Consulta Neurologia</option>
+      <option value="Consulta Endocrinologia">Consulta Endocrinologia</option>
+      <option value="Consulta Gastroenterologia">Consulta Gastroenterologia</option>
+      <option value="Consulta Urologia">Consulta Urologia</option>
+
+      <option value="Check-up Básico">Check-up Básico</option>
+      <option value="Check-up Completo">Check-up Completo</option>
+      <option value="Check-up Executivo">Check-up Executivo</option>
+
+      <option value="Exame de Sangue">Exame de Sangue</option>
+      <option value="Glicemia em Jejum">Glicemia em Jejum</option>
+      <option value="Hemoglobina Glicada">Hemoglobina Glicada</option>
+      <option value="Colesterol Total e Frações">Colesterol Total e Frações</option>
+      <option value="Triglicerídeos">Triglicerídeos</option>
+
+      <option value="Função Hepática">Função Hepática</option>
+      <option value="Função Renal">Função Renal</option>
+      <option value="Ureia">Ureia</option>
+      <option value="Creatinina">Creatinina</option>
+
+      <option value="TSH">TSH</option>
+      <option value="T3">T3</option>
+      <option value="T4 Livre">T4 Livre</option>
+
+      <option value="Beta HCG">Beta HCG</option>
+      <option value="PSA Total">PSA Total</option>
+      <option value="PSA Livre">PSA Livre</option>
+      <option value="Exame de Urina">Exame de Urina</option>
+      <option value="Urocultura">Urocultura</option>
+        <option value="ACIDO URICO"></option>
+        <option value="ALBUMINA"></option>
+        <option value="AMILASE"></option>
+        <option value="BILIRRUBINAS TOTAIS E FRAÇÕES"></option>
+        <option value="CALCIO"></option>
+        <option value="COLESTEROL HDL"></option>
+        <option value="COLESTEROL LDL"></option>
+        <option value="COLESTEROL VLDL"></option>
+        <option value="COLESTEROL TOTAL"></option>
+        <option value="CREATININA"></option>
+        <option value="CK-MB"></option>
+        <option value="CPK"></option>
+        <option value="FERRITINA"></option>
+        <option value="FERRO SERICO"></option>
+        <option value="FOSFATASE ALCALINA"></option>
+        <option value="FOSFORO"></option>
+        <option value="GAMA GT"></option>
+        <option value="GLICEMIA"></option>
+        <option value="GLICEMIA POS-PRANDIAL"></option>
+        <option value="HEMOGLOBINA GLICADA"></option>
+        <option value="INSULINA"></option>
+        <option value="LACTATO"></option>
+        <option value="LDH"></option>
+        <option value="LIPASE"></option>
+        <option value="MAGNESIO"></option>
+        <option value="POTASSIO"></option>
+        <option value="SODIO"></option>
+        <option value="UREIA"></option>
+        <option value="HEMOGRAMA COMPLETO"></option>
+        <option value="CONTAGEM DE PLAQUETAS"></option>
+        <option value="HEMATOCRITO"></option>
+        <option value="HEMOGLOBINA"></option>
+        <option value="TSH"></option>
+        <option value="T3"></option>
+        <option value="T4 LIVRE"></option>
+        <option value="ESTRADIOL"></option>
+        <option value="PROGESTERONA"></option>
+        <option value="PROLACTINA"></option>
+        <option value="TESTOSTERONA TOTAL"></option>
+        <option value="TESTOSTERONA LIVRE"></option>
+        <option value="BETA HCG"></option>
+        <option value="HIV"></option>
+        <option value="HEPATITE B"></option>
+        <option value="HEPATITE C"></option>
+        <option value="VDRL (SIFILIS)"></option>
+        <option value="UROCULTURA"></option>
+
+        <option value="EXAME DE FEZES"></option>
+        <option value="PARASITOLOGICO DE FEZES"></option>
+        <option value="PESQUISA DE SANGUE OCULTO"></option>
+        <option value="Parasitológico de Fezes">Parasitológico de Fezes</option>
+      <option value="Pesquisa de Sangue Oculto nas Fezes">Pesquisa de Sangue Oculto nas Fezes</option>
+
+    </datalist>
+
+    <input type="text" id="datatexto" placeholder="Data">
+    <input type="text" list="tp-hora"  id="hora" placeholder="hora">
+    <datalist id="tp-hora">
+      <option value="De Seg à Sex - 07h às 14h">
+      <option value="De Seg à Sex - 8h às 11h e 13h15 às 15h por (ordem de chegada)">
+      <option value="7h as 13h e aos sábados de 08h00 as 11h00 por ordem de chegada.">
+
+    </datalist>
+
+    <label for="Entrada">Entrada:</label>
+    <input type="text" id="entrada" placeholder="Valor entrada">
+    <label for="Saida">Saída:</label>
+    <input type="text" id="saida" placeholder="Valor restante">
+<script>
+  const entradaInput = document.getElementById("entrada");
+  const saidaInput = document.getElementById("saida");
+
+function formatarMoeda(valor) {
+  valor = valor.replace(/\D/g, ""); // remove tudo que não é número
+  valor = (valor / 100).toFixed(2) + "";
+  valor = valor.replace(".", ",");
+
+  valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+  return "R$ " + valor;
+}
+
+entradaInput.addEventListener("input", () => {
+  entradaInput.value = formatarMoeda(entradaInput.value);
+});
+
+saidaInput.addEventListener("input", () => {
+  saidaInput.value = formatarMoeda(saidaInput.value);
+});
+</script>
+  </div>
+
+  <!-- TEXTO GERADO -->
+  <div class="preview-box">
+  <div class="preview" id="resultado"></div>
+  <button id="btnCopiarMensagem"onclick="copiarTexto()">
+
+<ion-icon  name="copy-outline"></ion-icon> Copiar mensagem
+
+</button>
+</div>
+  <!-- Essa parte é para o script de cópia -->
+  
+  <script>
+    const paciente = document.getElementById("paciente");
+    //const clinica = document.getElementById("clinica");
+    const exame = document.getElementById("exame");
+    const data = document.getElementById("datatexto");
+    const hora = document.getElementById("hora");
+    const entrada = document.getElementById("entrada");
+    const saida = document.getElementById("saida");
+    const resultado = document.getElementById("resultado");
+    const totalaPagar = document.getElementById("totalaPagar");
+
+   const total =
+    (parseFloat(entrada.value || 0) + parseFloat(saida.value || 0));
+
+    function atualizarTexto() {
+      const datatexto = data.value || "...";
+
+      const valorEntrada = parseFloat(
+    entrada.value.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
+) || 0;
+
+const valorSaida = parseFloat(
+    saida.value.replace("R$", "").replace(/\./g, "").replace(",", ".").trim()
+) || 0;
+
+const total = valorEntrada + valorSaida;
+
+      resultado.innerHTML = `  
+➡️*Confirmação de AGENDAMENTO*
+
+*👤Paciente:* ${paciente.value || "..."}
+*🧪Procedimento:* ${exame.value || "..."}
+*🗓️Dia:* ${datatexto}
+*⏰Horário:* ${hora.value || "..."}
+
+💰 O pagamento é da seguinte forma, entrada de:
+*${entrada.value || "00,00"}* para a confirmação do agendamento.
+
+🔹 PIX/transferência ou
+🔹 BOLETO BANCÁRIO (com acréscimo de R$ 4,00) ou
+🔹 PAGSEGURO (cartão de crédito).
+
+O valor restante de *${saida.value || "00,00"}* que será pago diretamente na clínica na data agendada.
+
+Totalizando R$ ${total.toFixed(2).replace('.', ',')}`;
+    }
+  //// 🏥 Nome da Clínica: *${clinica.value}*
+
+    // Atualização em tempo real
+    paciente.addEventListener("input", atualizarTexto);
+    //clinica.addEventListener("input", atualizarTexto);
+    exame.addEventListener("input", atualizarTexto);
+    data.addEventListener("input", atualizarTexto);
+    hora.addEventListener("input", atualizarTexto);
+    entrada.addEventListener("input", atualizarTexto);
+    saida.addEventListener("input", atualizarTexto);
+
+    // Inicializa já com vazio
+    atualizarTexto();
+  </script>
+<div class="area-templates">
+
+  <select id="templateSelect">
+    <option value="">Selecione um texto</option>
+    <option value="guia">Guia de Agendamento</option>
+    <option value="atendimento">Caso queira agendar</option>
+    <option value="valor">Valor e Clínica</option>
+  </select>
+
+
+
+  
+  <div class="preview-box2">
+    <input 
+   type="text"
+   id="buscarExame"
+   placeholder="Buscar preparo de exame 🔎">
+
+
+<div id="resultadoExames" class="resultado-exames"></div>
+    <div class="preview2" id="previewTemplate">
+      Selecione um modelo acima 👆
+    </div>
+
+   <button id="btnCopiarTemplate"onclick="copiarTemplate()">
+
+<ion-icon  name="copy-outline"></ion-icon> Copiar
+
+</button>
+  </div>
+  
+
+</div>
+
+
+<script>
+
+const buscarExame =
+document.getElementById("buscarExame");
+
+const resultadoExames =
+document.getElementById("resultadoExames");
+
+const exames = [
+
+
+{
+nome: "*PREPARO TOMOGRAFIA COMPUTADORIZADA:*",
+preparo: `📌 *INSTRUÇÕES:*
+
+- Roupas leves, sem metais;
+
+- Cabelo seco, sem produtos;
+
+- Sem acessórios (brincos, relógio, etc);
+
+- Levar Guia DR. EXAME + documento com foto original + pedido médico
+`
+},
+{
+nome: "*Como me preparar para o exame Parasitológico de Fezes 1ª Amostra*",
+preparo: `– Necessário envio de fezes frescas recém-eliminadas;
+
+– Coletar frações (porções iguais) de fezes em diferentes partes do bolo fecal. No caso de múltiplas amostras, colher em dias alternados.
+`
+},
+{
+nome: "*📋 PREPARO PARA O EXAME PAPANICOLAU:*",
+preparo: `- A paciente não pode estar menstruada ou com qualquer tipo de sangramento vaginal.
+
+- Deve evitar relações sexuais por 3 dias antes do exame.
+
+- Não utilizar creme vaginal nem realizar duchas no período de preparo.
+`
+},
+{
+nome: "*PREPARO TESTE ERGOMÉTRICO:*",
+preparo: `*📌 INSTRUÇÕES:*
+
+-  Não realizar o exame em jejum, ou seja, deve alimentar-se normalmente;
+
+-  Não fumar, tomar café, chá ou bebidas alcoólicas no dia do exame; 
+
+-  Não utilizar hidratantes ou sabonetes no dia do exame; 
+
+-  Não realizar se estiver resfriado ou gripado; 
+
+-  Evitar exercícios intensos e se for possível dormir pelo menos oito horas na noite anterior;
+
+-  Trazer receita médica ou nomes de medicamentos para pressão ou coração que estiver fazendo uso;
+
+-  Trazer exames anteriores se houver e comparecer com 15 minutos de antecedência;
+
+-  Obrigatório comparecer trajado de agasalho esportivo, bermudas ou roupas leves que permitam conforto ao caminhar (uso de tênis de borracha é essencial);
+
+-  Levar Guia DR. EXAME + documento com foto original + pedido médico.
+
+> *Observação:*  *Pacientes do sexo feminino* Não utilizar sutiã com suporte metálico;
+
+`
+},
+{
+nome: "*PREPARO DENSITOMETRIA ÓSSEA:*",
+preparo: `*📌 INSTRUÇÕES:*
+
+- Não tomar cálcio ou complexos vitamínicos 24h antes do exame;
+
+- Caso tenha realizado algum exame com uso de contraste (como Cintilografia Óssea, Tomografia Computadorizada, Ressonância Magnética, Trânsito Intestinal, Enema Opaco, EED, etc) será necessário aguardar 7 dias para a realização da Densitometria;
+
+- Exame não realizado em gestantes;
+
+- Evitar roupas que possuam zíperes, botões e cintos feitos de metal;
+
+- Objetos como chaves ou carteiras que possam estar na área a ser examinada devem ser removidos;
+
+> Observações: O pedido médico deve informar a parte do corpo a ser examinada. Paciente precisa descrever se faz uso de Cálcio ou Vitamina D, se é portador de deficiência física ou faz uso de cadeira de rodas pois o exame é realizado com o paciente de pé. Necessário informar peso e altura.
+`
+},
+{
+nome: "*PREPARO ELETROCARDIOGRAMA:*",
+preparo: `*Paciente Homens:* Aparar os pelos na região do tórax um dias antes do exame;
+
+*Paciente Mulheres:* Usar top esportivo ou sutiã sem arame; 
+
+- Levar Guia DR. EXAME + documento com foto original + pedido médico.
+
+`
+},
+{
+nome: "*Como me preparar para o Teste de Tolerância à Glicose para Gestantes?*",
+preparo: `*Confira as orientações a seguir para a realização do Teste de Tolerância à Glicose para Gestante (TOTG):*
+
+– É imprescindível comparecer para o teste com pedido médico;
+
+– Adolescentes a partir dos 14 anos podem realizar o teste desde que acompanhados dos pais;
+
+– É obrigatório jejum de 8 a 14 horas antes de iniciar os procedimentos para o teste ou conforme orientação médica;
+
+– Manter a dieta habitual, sem restrição de carboidratos (massas, açúcares e doces) nas 72 horas (3 dias) que antecedem o exame;
+
+– Não usar laxantes na véspera (24 horas) do teste.
+
+> *ATENÇÃO!:*  *Teste realizado de segunda a sexta-feira, das 7h às 11h, apenas nas unidades Centro SP, Centro RJ, Diadema, Ipiranga, Lapa, Piracicaba, Santo Amaro, São Miguel e Tatuapé. É necessário apresentar pedido médico.*
+`
+},
+{
+nome: "*PREPARO ELETROENCEFALOGRAMA COMUM:*",
+preparo: `*📌 INSTRUÇÕES:*
+
+-  O paciente deve estar com os cabelos limpos, portanto deve lavá-los no dia anterior a realização do exame usando sabonete neutro ou de coco;
+
+-  Não deve utilizar condicionador, gel ou outros cremes;
+
+-  Levar uma toalha;
+
+-  Não deve ingerir café;
+
+-  Deve alimentar-se normalmente, ou seja, não pode estar em jejum;
+
+- Levar Guia DR. EXAME + documento com foto original + pedido médico.
+`
+},
+{
+nome: "*PREPARO ESPERMOGRAMA:*",
+preparo: `*📌 INSTRUÇÕES:*
+
+🧘‍♂️ Preparo:
+
+•⁠  ⁠Ficar 3 dias sem relação sexual antes da coleta;
+
+•⁠  ⁠Evitar beber bebidas alcoólicas nesse período;
+
+ - Levar Guia DR. EXAME + documento com foto original + pedido médico
+
+`
+},
+{
+nome: "*PREPARO HOLTER / MAPA:*",
+preparo: `*📌 INSTRUÇÕES:*
+
+- Manter alimentação normal, sem restrições;
+
+- Tomar banho antes de realizar o exame, pois só poderá tomar banho após a retirada do equipamento;
+
+- Não utilizar hidratantes ou óleos na região do tórax;
+
+- Trazer exames anteriores se houver e comparecer com 20 minutos de antecedência;
+
+*Pacientes do sexo masculino:* deverá depilar o tórax, pois serão colocados eletrodos nessa região; 
+
+*Pacientes do sexo feminino:* deverá trajar blusa larga, pois serão colocados eletrodos na região do tórax. 
+
+> Observações: Trazer lista de medicamentos em uso com doses e horários.
+
+`
+},
+
+
+
+
+];
+
+buscarExame.addEventListener("input", () => {
+
+const texto =
+buscarExame.value.toLowerCase();
+
+resultadoExames.innerHTML = "";
+
+if(texto === ""){
+return;
+}
+
+const filtrados =
+exames.filter(exame =>
+
+exame.nome
+.toLowerCase()
+.includes(texto)
+
+);
+
+if(filtrados.length === 0){
+
+resultadoExames.innerHTML = `
+
+<div class="card-exame">
+Nenhum exame encontrado 😢
+</div>
+
+`;
+
+return;
+
+}
+
+filtrados.forEach(exame => {
+
+resultadoExames.innerHTML += `
+
+<div class="card-exame">
+
+<div class="nome-exame">
+${exame.nome}
+</div>
+
+<div class="preparo-exame">
+${exame.preparo}
+</div>
+
+<button
+class="btn-copiar-exame"
+onclick="copiarPreparo(\`${exame.nome}\n\n${exame.preparo}\`)">
+
+📋 Copiar preparo
+
+</button>
+
+</div>
+
+`;
+
+});
+
+});
+
+function copiarPreparo(texto){
+
+navigator.clipboard.writeText(texto);
+
+}
+
+</script>
+```
+
+
+<script>
+  
+  const templateSelect = document.getElementById("templateSelect");
+  const previewTemplate = document.getElementById("previewTemplate");
+ 
+
+
+function atualizarTemplate() {
+  const tipo = templateSelect.value;
+
+  if (tipo === "guia") {
+    previewTemplate.innerText = `
+ 
+ 📄 *${paciente.value || "..."}* , segue em anexo a sua GUIA de AGENDAMENTO para o exame solicitado. Não esqueça de no dia levar a GUIA IMPRESSA junto ao documento com foto para ser apresentada na Clínica.
+    `;
+  }
+
+  if (tipo === "atendimento") {
+    previewTemplate.innerText = `
+Caso queira agendar conosco, estamos à disposição! 😉
+
+Nossa central de atendimento via WhatsApp funciona de:
+
+📅 Segunda a Sexta das 07h às 18h e Sábado das 08 às 12h.  
+    `;
+  }
+
+  if (tipo === "valor") {
+    previewTemplate.innerText = `
+
+ O Valor segue por *${entrada.value || "..."}* para os exames solicitados com possibilidade de parcelamento. a Clínica atende de Segunda a Sábado (a partir) das 7h às 11h por ordem de chegada. Seria viavel?
+    `;
+  }
+}
+templateSelect.addEventListener("change", atualizarTemplate);
+paciente.addEventListener("input", atualizarTemplate);
+entrada.addEventListener("input", atualizarTemplate);
+
+</script>
+<button id="themeToggle">
+  🌙 Modo Escuro
+</button>
+<script>
+
+function copiarTexto() {
+
+  const texto =
+  document.getElementById("resultado").innerText;
+
+  const botao =
+  document.getElementById("btnCopiarMensagem");
+
+  navigator.clipboard.writeText(texto);
+
+  botao.innerHTML = "✅ Copiado!";
+  botao.classList.add("copiado");
+
+  setTimeout(() => {
+
+    botao.innerHTML =
+    "📋 Copiar mensagem";
+
+    botao.classList.remove("copiado");
+
+  }, 2000);
+
+}
+
+function copiarTemplate() {
+
+  const texto =
+  document.getElementById("previewTemplate").innerText;
+
+  const botao =
+  document.getElementById("btnCopiarTemplate");
+
+  navigator.clipboard.writeText(texto);
+
+  botao.innerHTML = "✅ Copiado!";
+  botao.classList.add("copiado");
+
+  setTimeout(() => {
+
+    botao.innerHTML =
+    "📋 Copiar";
+
+    botao.classList.remove("copiado");
+
+  }, 2000);
+
+}
+
+</script>
+<!-- Aqui vai ser a parte do tema claro ou escuro  -->
+   <script>
+
+const themeToggle =
+document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+
+    themeToggle.innerHTML =
+    "☀️ Modo Claro";
+
+  } else {
+
+    themeToggle.innerHTML =
+    "🌙 Modo Escuro";
+
+  }
+
+});
+
+</script>
+
+<body>
+
+
+<script></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
